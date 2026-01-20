@@ -9,7 +9,8 @@ body {
   font-family: "Inter", "Roboto", Arial, sans-serif;
 }
 
-.header {
+h1,
+h2 {
   text-align: center;
   color: #9e0505;
 }
@@ -58,6 +59,7 @@ td {
 
 .footer-container {
   margin: 5px 0px;
+  text-align: center;
 }
 
 h4 {
@@ -65,17 +67,12 @@ h4 {
   display: inline;
 }
 
-.link {
-  display: flex;
-  justify-content: center;
-}
-
-.header a {
+.footer-container a {
   display: block;
   text-decoration: none;
 }
 
-.header a:hover {
+.footer-container a:hover {
   color: #C9A227;
   text-decoration: underline;
 }
@@ -114,7 +111,6 @@ ul.navbar a:hover {
   .my_custom_panel {
     background-color: #FFEEEE;
   }
-
 }
 
 /******************** Styles for Tablets or Larger ********************/
