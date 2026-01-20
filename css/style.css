@@ -9,7 +9,12 @@ body {
   font-family: "Inter", "Roboto", Arial, sans-serif;
 }
 
-h1,
+h1 {
+  color: #9e0505;
+  display: inline;
+  padding: 0px 5px;
+}
+
 h2 {
   text-align: center;
   color: #9e0505;
@@ -108,17 +113,35 @@ ul.navbar a:hover {
 
 /******************** Styles for Phones ONLY ********************/
 @media only screen and (max-width: 599px) {
-  .my_custom_panel {
-    background-color: #FFEEEE;
+  .title, .subtitle {
+    text-align: center;
   }
 }
 
 /******************** Styles for Tablets or Larger ********************/
 @media only screen and (min-width: 600px) {
-  .my_custom_panel {
-    background-color: #EEEEFF;
+  .title, .subtitle {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+  }
+  .title {
+    margin-top: 20px;
+  }
+  .subtitle {
+    margin-bottom: 25px;
   }
 }
 
 /******************** Styles for Desktop and other Wide Screens ONLY ********************/
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+  .title {
+  text-align: right;
+  margin: 25px 0px;
+}
+
+.subtitle {
+  text-align: left;
+  margin: 25px 0px;
+}
+}
