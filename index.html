@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSCI 488 - Senior Seminar in Computer Science</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Course webpage for CSCI 488, featuring course information and assignments.">
+  <meta name="keywords" content="CSCI 488, computer science, software engineering, web apps, programming">
+  <link href="responsive_columns_framework.css" rel="stylesheet" type="text/css">
+  <style>
+    /******************** Styles for All Device Sizes ********************/
+    /*
+     Styles outside the media queries apply across all breakpoints unless 
+     over-ridden inside one of the media queries
+    */
+    body {
+      color: #333333;
+      background-color: #ffffff;
+      font-family: "Inter", "Roboto", Arial, sans-serif;
+    }
+
+    .header {
+      text-align: center;
+      color: #9e0505;
+    }
+
+    hr {
+      border: 2px solid;
+      border-color: #C9A227;
+    }
+
+    .logo {
+      display: flex;
+      justify-content: center;
+    }
+
+    .about {
+      margin: 10px 0px;
+    }
+
+    .about span {
+      font-weight: bold;
+      font-size: 20px;
+      color: #9e0505;
+    }
+
+    .table-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    table,
+    td,
+    th {
+      border: 2px solid;
+      border-color: #9e0505;
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 10px;
+    }
+
+    /******************** Nav Bar Styles ********************/
+    ul.navbar {
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    ul.navbar li {
+      float: left;
+      margin: 0px 0px 0px 4px;
+      width: 150px;
+      min-width: 100px;
+      text-align: center;
+    }
+
+    ul.navbar a {
+      display: block;
+      text-decoration: none;
+      color: #ffffff;
+      background-color: #9e0505;
+      padding: 8px;
+      border-radius: 4px;
+    }
+
+    ul.navbar a:hover {
+      background-color: #C9A227;
+    }
+
+    .my_custom_col_1 {
+      background-color: #EEFFEE;
+      min-height: 250px;
+    }
+
+    .my_custom_col_2 {
+      background-color: #EEEEFF;
+      min-height: 250px;
+    }
+
+    .footer-container {
+      margin: 5px 0px;
+    }
+
+    h4 {
+      color: #C9A227;
+      display: inline;
+    }
+
+    .link {
+      display: flex;
+      justify-content: center;
+    }
+
+    .header a {
+      display: block;
+      text-decoration: none;
+    }
+
+    .header a:hover {
+      color: #C9A227;
+      text-decoration: underline;
+    }
+
+    /******************** Styles for Phones ONLY ********************/
+    @media only screen and (max-width: 599px) {
+      .my_custom_panel {
+        background-color: #FFEEEE;
+      }
+
+    }
+
+    /******************** Styles for Tablets or Larger ********************/
+    @media only screen and (min-width: 600px) {
+      .my_custom_panel {
+        background-color: #EEEEFF;
+      }
+    }
+
+    /******************** Styles for Desktop and other Wide Screens ONLY ********************/
+    @media only screen and (min-width: 768px) {}
+  </style>
+</head>
+
+<body>
+  <!-- 1st row -->
+  <div class="row header">
+    <h1 class="col m12">CSCI 488 ~ Senior Seminar in Computer Science ~</h1>
+    <hr>
+  </div>
+  <!-- 2nd row -->
+  <div class="row">
+    <div class="col l3 m12 logo">
+      <a href="https://www.lakeforest.edu/" target="_blank">
+        <img src="images/lfc_logo.png" alt="LFC Logo" width="100" height="100">
+      </a>
+    </div>
+    <div class="col l9 m12 about">
+      <span>About This Page</span>
+      <br>
+      This course focuses on <b>Database Driven Web Applications</b> and core
+      <b>Software Engineering principles</b>.<br> This page intended to provide
+      <i>homework assignments</i>, <i>course materials</i>, and
+      <i>other relevant information</i>, rather than serving as a showcase for
+      visual design, as this is not a web design course.<br> Instead, the primary
+      emphasis is placed on <u>server-side programming</u>,
+      <u>database development</u>, and <u>building reliable</u>,
+      scalable applications that follow sound engineering practices.
+    </div>
+  </div>
+  <br>
+  <!-- 3rd row -->
+  <div class="row">
+    <h2 class="header">Computer Science (CSCI) Coursework Overview</h2>
+    <div class="table-container">
+      <table>
+        <tr>
+          <th>Course Number</th>
+          <th>Course Name</th>
+          <th>Semester</th>
+        </tr>
+        <tr>
+          <td>CSCI 250</td>
+          <td>Programming for Data Applications</td>
+          <td>Fall 2024</td>
+        </tr>
+        <tr>
+          <td>CSCI 327</td>
+          <td>Intro to Database Systems</td>
+          <td>Fall 2024</td>
+        </tr>
+        <tr>
+          <td>CSCI 417</td>
+          <td>Algorithms & Algorithm Analysis</td>
+          <td>Spring 2025</td>
+        </tr>
+        <tr>
+          <td>CSCI 450</td>
+          <td>Computer Vision & Machine Learning</td>
+          <td>Spring 2025</td>
+        </tr>
+        <tr>
+          <td>CSCI 325</td>
+          <td>Artificial Intelligence</td>
+          <td>Fall 2025</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <br><br><br>
+  <!-- 4th row -->
+  <div class="row">
+    <h2 class="header">CSCI 488 Resources</h2>
+    <ul class="navbar">
+      <li><a href="#">Assignments</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="https://www.linkedin.com/in/kaito-miyamoto/" target="_blank">LinkedIn</a></li>
+      <li><a href="files/Kaito_Miyamoto_Resume.pdf" target="_blank">Resume</a></li>
+    </ul>
+  </div>
+  <br><br>
+  <!-- 5th row -->
+  <div class="row header">
+    <hr>
+    <div class="col l4 m12 footer-container">
+      <h4>&copy 2026 Kaito Miyamoto</h4>
+    </div>
+    <div class="col l4 m12 footer-container">
+      <h4>miyamotok@lakeforest.edu</h4>
+    </div>
+    <div class="col l4 m12 footer-container link">
+      <a href="https://www.lakeforest.edu/academics/programs/math/" target="_blank">
+        <h4>Math/CSCI Department Page</h4>
+      </a>
+    </div>
+  </div>
+</body>
+
+</html>
