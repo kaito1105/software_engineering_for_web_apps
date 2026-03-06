@@ -9,7 +9,7 @@
 <body>
   <h2>Recipe Submission Form</h2>
 
-  <form name="form" action="echo.php" method="POST">
+  <form name="form" action="../form_summary.php" method="GET">
     <label for="recipe">Recipe Name:</label><br>
     <input type="text" id="recipe" name="recipe" 
            placeholder="e.g., Spaghetti Carbonara" required>
@@ -74,19 +74,19 @@
     <br><br>
 
     Proteins Used (Select all that apply):<br>
-    <input type="checkbox" id="beef" name="proteins" value="beef">
+    <input type="checkbox" id="beef" name="proteins[]" value="beef">
     <label for="beef">Beef</label><br>
 
-    <input type="checkbox" id="pork" name="proteins" value="pork">
+    <input type="checkbox" id="pork" name="proteins[]" value="pork">
     <label for="pork">Pork</label><br>
 
-    <input type="checkbox" id="chicken" name="proteins" value="chicken">
+    <input type="checkbox" id="chicken" name="proteins[]" value="chicken">
     <label for="chicken">Chicken</label><br>
 
-    <input type="checkbox" id="fish" name="proteins" value="fish">
+    <input type="checkbox" id="fish" name="proteins[]" value="fish">
     <label for="fish">Fish</label><br>
 
-    <input type="checkbox" id="egg" name="proteins" value="egg">
+    <input type="checkbox" id="egg" name="proteins[]" value="egg">
     <label for="egg">Egg</label>
     <br><br>
 
